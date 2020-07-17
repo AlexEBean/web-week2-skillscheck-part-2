@@ -11,7 +11,12 @@
 //time + ", " + heroine + " defeated the evil wizard with " + magicItem
 
 //Code here
-
+function fairytale (heroine, magicItem) {
+  let time = "A long time ago"
+  return function string () {
+    return `${time}, ${heroine} defeated the evil wizard with ${magicItem}`
+  }
+}
 
 //////////////////PROBLEM 2////////////////////
 
@@ -28,7 +33,7 @@ function adventure(mode) {
 
 //What data type is the value returned by calling adventure("plane")?
 
-// var adventureReturns = "function"
+var adventureReturns = "function"
 // var adventureReturns = "string"
 // var adventureReturns = "undefined"
 // var adventureReturns = "object"
@@ -37,19 +42,19 @@ function adventure(mode) {
 //True or false: "origin" is a public variable contained within "adventure".
 
 // var originIsPublic = true
-// var originIsPublic = false
+var originIsPublic = false
 
 
 //True or false: the function returned from "adventure" is public.
 
-// var functionIsPublic = true
+var functionIsPublic = true
 // var functionIsPublic = false
 
 //True or false: the function returned from "adventure" can access
 //the parameter "mode", and the variable "origin", even after 
 //the function "adventure" has exited.
 
-// var functionCanStillAccess = true
+var functionCanStillAccess = true
 // var functionCanStillAccess = false
 
 
@@ -76,26 +81,26 @@ function careerUpdater(name, city, job) {
 //function in a variable called "annePromotion"
 
 //Code here
-
+let annePromotion = careerUpdater("Anne", "Windsor", "Lady-In-Waiting")
 
 //Call annePromotion with the arguments "London", "Queen". Store the 
 //result in a variable called "anneResumeEntry1"
 
 //Code here
-
+let anneResumeEntry1 = annePromotion("London", "Queen")
 
 //Then, call annePromotion again with just the argument 
 //"Tower of London dungeons" and save it to a variable called
 //"anneResumeEntry2"
 
 //Code here
-
+let anneResumeEntry2 = annePromotion("Tower of London dungeons")
 
 //Based on the instance of annePromotion, and the lack of a newJob
 //argument, what should Anne's job be after creating anneResumeEntry2? 
 //Uncomment the answer.
 
-// var annesJobInDungeon = "Lady-In-Waiting"
+var annesJobInDungeon = "Lady-In-Waiting"
 // var annesJobInDungeon = "Queen"
 // var annesJobInDungeon = "undefined"
 
@@ -105,9 +110,10 @@ function careerUpdater(name, city, job) {
 //called "claraPromotion".
 
 //Code here
-
+let claraPromotion = careerUpdater("Clara", "Salt Lake City", "Student")
 
 //Then, call claraPromotion with the arguments "Seattle", "programmer"
 //and store it in a variable called "claraResumeEntry"
 
 //Code here
+let claraResumeEntry = claraPromotion("Seattle", "programmer")
