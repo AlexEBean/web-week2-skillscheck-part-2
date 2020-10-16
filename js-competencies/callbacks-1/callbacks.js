@@ -4,10 +4,16 @@
 
 //Code here
 function stringItOut (arr) {
-  
-      arr.sort((a,b) => b-a)
- 
-  return arr
+  for (let i = 0; i < arr.length; i++){
+    if (typeof arr[i] === "string"){
+      let string = arr.sort()
+      let reverse = string.reverse()
+      return reverse.toString()
+    } else if (typeof arr[i] === "number"){
+      let number = arr.sort((a,b) => b - a)
+      return number.toString()
+    }
+  }
 }
 
 //////////////////PROBLEM 2////////////////////
@@ -23,4 +29,4 @@ function complex(num1, num2) {
 }
 
 //Code here
-mathResult = math(complex, 2, 3)
+const mathResult = math(complex, 2, 3)

@@ -12,7 +12,7 @@
 
 //Code here
 function fairytale (heroine, magicItem) {
-  let time = "A long time ago"
+  const time = "A long time ago"
   return function string () {
     return `${time}, ${heroine} defeated the evil wizard with ${magicItem}`
   }
@@ -81,20 +81,20 @@ function careerUpdater(name, city, job) {
 //function in a variable called "annePromotion"
 
 //Code here
-let annePromotion = careerUpdater("Anne", "Windsor", "Lady-In-Waiting")
+const annePromotion = careerUpdater("Anne", "Windsor", "Lady-In-Waiting")
 
 //Call annePromotion with the arguments "London", "Queen". Store the 
 //result in a variable called "anneResumeEntry1"
 
 //Code here
-let anneResumeEntry1 = annePromotion("London", "Queen")
+const anneResumeEntry1 = annePromotion("London", "Queen")
 
 //Then, call annePromotion again with just the argument 
 //"Tower of London dungeons" and save it to a variable called
 //"anneResumeEntry2"
 
 //Code here
-let anneResumeEntry2 = annePromotion("Tower of London dungeons")
+const anneResumeEntry2 = annePromotion("Tower of London dungeons")
 
 //Based on the instance of annePromotion, and the lack of a newJob
 //argument, what should Anne's job be after creating anneResumeEntry2? 
@@ -110,7 +110,7 @@ var annesJobInDungeon = "Lady-In-Waiting"
 //called "claraPromotion".
 
 //Code here
-let claraPromotion = careerUpdater("Clara", "Salt Lake City", "Student")
+const claraPromotion = careerUpdater("Clara", "Salt Lake City", "Student")
 
 //Then, call claraPromotion with the arguments "Seattle", "programmer"
 //and store it in a variable called "claraResumeEntry"

@@ -148,7 +148,7 @@ var norseGlobalScope = ["hela"]
 
 //This array should only contain variables accessible in scope of the 
 //function norsePantheon
-var norsePantheonScope = ["hela", "odin", "asgardians", "frigga"]
+var norsePantheonScope = ["hela", "odin"]
 
 //This array should only contain variables accessible in scope of the 
 //for-loop within the function norsePantheon
@@ -193,7 +193,7 @@ function denver(color, weather){
 
 //What will seattle() return? Uncomment the correct answer.
 
-// var seattleWeather = "The sky is purple and it is stormy."
+var seattleWeather = "The sky is purple and it is stormy."
 // var seattleWeather = "The sky is grey and it is foggy."
 // var seattleWeather = "The sky is undefined and it is undefined."
 
@@ -202,7 +202,7 @@ function denver(color, weather){
 
 // var vancouverWeather = "The sky is purple and it is stormy."
 // var vancouverWeather = "The sky is iron grey and it is rainy."
-// var vancouverWeather = "The sky is grey and it is foggy."
+var vancouverWeather = "The sky is grey and it is foggy."
 // var vancouverWeather = "The sky is undefined and it is undefined."
 
 
@@ -210,7 +210,7 @@ function denver(color, weather){
 
 // var denverWeather = "The sky is purple and it is stormy."
 // var denverWeather = "The sky is iron grey and it is rainy."
-// var denverWeather = "The sky is grey and it is foggy."
+var denverWeather = "The sky is grey and it is foggy."
 // var denverWeather = "The sky is undefined and it is undefined."
 
 
@@ -218,6 +218,6 @@ function denver(color, weather){
 
 // var denverWeather2 = "The sky is purple and it is stormy."
 // var denverWeather2 = "The sky is iron grey and it is rainy."
-// var denverWeather2 = "The sky is blue and it is sunny."
+var denverWeather2 = "The sky is blue and it is sunny."
 // var denverWeather2 = "The sky is grey and it is foggy."
 // var denverWeather2 = "The sky is undefined and it is undefined."

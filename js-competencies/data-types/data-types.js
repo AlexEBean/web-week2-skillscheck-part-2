@@ -5,7 +5,7 @@
 // var jsDataTypes = ["bool", "string", "object", "integer", "function", "undefined"]
 // var jsDataTypes = ["boolean", "string", "object", "int", "function"]
 // var jsDataTypes = ["bool", "string", "object", "integer", "function"]
-// var jsDataTypes = ["boolean", "string", "object", "number", "function", "undefined"]
+var jsDataTypes = ["boolean", "string", "object", "number", "function", "undefined"]
 
 
 ///////////////////Problem 2//////////////////
@@ -13,7 +13,7 @@
 //null to a boolean - based on whether or not you like 
 //chocolate!
 
-var iLikeChocolate = null
+var iLikeChocolate = true
 
 
 ///////////////////Problem 3//////////////////
@@ -21,21 +21,21 @@ var iLikeChocolate = null
 //called myString
 
 //Code here
-
+const myString = ""
 
 ///////////////////Problem 4//////////////////
 //Create an integer, and assign it to a variable
 //called myInt
 
 //Code here
-
+const myInt = 42
 
 ///////////////////Problem 5//////////////////
 //Create a function called myFunction that returns
 //the string "I am a function!"
 
 //Code here
-
+myFunction = () => "I am a function!"
 
 ///////////////////Problem 6//////////////////
 //Create an object called myObject that has a 
@@ -44,7 +44,11 @@ var iLikeChocolate = null
 //property.
 
 //Code here
-
+const myObject = {
+    name: "Alex",
+    team: "WR6",
+    whatTeam: () => myObject.team
+}
 
 ///////////////////Problem 7//////////////////
 //Create an array called myArray that contains:
@@ -52,7 +56,7 @@ var iLikeChocolate = null
 //an array literal that contains 4, 5
 
 //Code here
-
+const myArray = [1, "two", {three: 3}, [4,5]]
 
 ///////////////////Problem 8//////////////////
 //Make a function called whatAmI that takes in one 
@@ -60,13 +64,13 @@ var iLikeChocolate = null
 //return the data type of the mystery parameter.
 
 //Code here
-
+whatAmI = (mys) => typeof mys
 
 ///////////////////Problem 9//////////////////
 //Create a variable called theVoid. Make it null.
 
 //Code here
-
+const theVoid = null
 
 ///////////////////Problem 10//////////////////
 //Create a function called undefiner that takes in 
@@ -74,7 +78,10 @@ var iLikeChocolate = null
 //to undefined. undefiner should return the array.
 
 //Code here
-
+function undefiner(arr) {
+    arr[1] = undefined
+    return arr
+}
 
 ///////////////////Problem 11//////////////////
 //Create a function called nananan that takes in 
@@ -83,13 +90,19 @@ var iLikeChocolate = null
 //the parameter divided by 2.
 
 //Code here
-
+function nananan(x) {
+    if (isNaN(x)) {
+        return "FLYING NOCTURNAL MAMMAL MAN!"
+    } else {
+        return x/2
+    }
+}
 
 //Now, call nananan with the value NaN, and store the 
 //result of the function call in a variable called "na".
 
 //Code here
-
+const na = nananan(NaN)
 
 ///////////////////Problem 12//////////////////
 //Create a function called arrayChecker that takes 
@@ -97,7 +110,13 @@ var iLikeChocolate = null
 //if the parameter is an array, and false otherwise.
 
 //Code here
-
+function arrayChecker(x) {
+    if (Array.isArray(x)){
+        return true
+    } else {
+        return false
+    }
+}
 
 ///////////////////Problem 13//////////////////
 //Create a function called numFromString that takes 
@@ -106,7 +125,10 @@ var iLikeChocolate = null
 //Return that base 10 number.
 
 //Code here
-
+function numFromString (str) {
+    const base10 = parseInt(str)
+    return base10
+}
 
 ///////////////////Problem 14//////////////////
 //Create a function called makeItAString that takes 
@@ -115,33 +137,36 @@ var iLikeChocolate = null
 //Return that string.
 
 //Code here
-
+function makeItAString(x) {
+    const str = x.toString()
+    return str
+}
 
 ///////////////////Problem 15//////////////////
 //Uncomment the correct answers below
 
 //What will 100 || 0 be evaluted to?
-// var answer1 = 100
+var answer1 = 100
 // var answer1 = 0
 
 //What will "Hello" && "Goodbye" be evaluted to?
 // var answer2 = "Hello"
-// var answer2 = "Goodbye"
+var answer2 = "Goodbye"
 
 //What will 14 + "" be evaluted to?
-// var answer3 = "14"
+var answer3 = "14"
 // var answer3 = 14
 
 //What will "14" - 10 be evaluted to?
 // var answer4 = "14"
 // var answer4 = "1410"
-// var answer4 = 4
+var answer4 = 4
 // var answer4 = 1410
 
 //What will ["anne", "bob"] + ["charlie"] be evaluted to?
 // var answer5 = ["anne", "bob", "charlie"]
 // var answer5 = "annebobcharlie"
-// var answer5 = "anne,bobcharlie"
+var answer5 = "anne,bobcharlie"
 // var answer5 = "anne,bob,charlie"
 
 
@@ -161,25 +186,25 @@ myCopiedStr += " What a beautiful day!"
 
 //What is the value of myArr?
 // var valMyArr = [1, 2, 3, 4]
-// var valMyArr = [1, 25, 3, 4]
+var valMyArr = [1, 25, 3, 4]
 
 //What is the value of myStr?
-// var valMyStr = "Hello, world!"
+var valMyStr = "Hello, world!"
 // var valMyStr = "Hello, world! What a beautiful day!"
 
 //What is the value of myCopiedArr?
 // var valMyCopiedArr = [1, 2, 3, 4]
-// var valMyCopiedArr = [1, 25, 3, 4]
+var valMyCopiedArr = [1, 25, 3, 4]
 
 //What is the value of myCopiedStr?
 // var valMyCopiedStr = "Hello, world!"
-// var valMyCopiedStr = "Hello, world! What a beautiful day!"
+var valMyCopiedStr = "Hello, world! What a beautiful day!"
 
 //Are arrays copied by reference, or by value?
-// var arraysCopiedBy = "reference"
+var arraysCopiedBy = "reference"
 // var arraysCopiedBy = "value"
 
 //Are string copied by reference, or by value?
 // var stringsCopiedBy = "reference"
-// var stringsCopiedBy = "value"
+var stringsCopiedBy = "value"
 

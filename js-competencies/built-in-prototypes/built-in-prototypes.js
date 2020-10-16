@@ -11,7 +11,7 @@
   
   //Code here
 function dragonMapper (arr) {
-  let newArr = arr.map(el => el += "...here be dragons")
+  let newArr = arr.map(e => e += "...here be dragons")
   return newArr
 }
 
@@ -25,7 +25,7 @@ function dragonMapper (arr) {
   
   //Code here
 function cookieLoversOnly (arr) {
-  newArr = arr.filter(el => el.favoriteCookie)
+  newArr = arr.filter(e => e.favoriteCookie)
   return newArr
 }
 
@@ -93,8 +93,8 @@ function cipherize (arr, str) {
 
   //Code here
 function reverseMe (str) {
-  let splitStr = str.split("")
-  let reverseArr = splitStr.reverse()
+  let split = str.split("")
+  let reverseArr = split.reverse()
   let reverseStr = reverseArr.join("")
   return reverseStr
 }
