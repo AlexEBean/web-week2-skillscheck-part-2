@@ -10,7 +10,12 @@
 //but a function expression saved to the variable key.
 
 //Code here
-
+function keyword () {
+  var key = function() {
+    return "word"
+  }
+  return key
+}
 
 ///////////////////Problem 2//////////////////
 //Answer the questions based on the following code:
@@ -27,27 +32,27 @@ argsVsParams(2, 3, num)
 // var z = "argument"
 // var z = "function"
 // var z = "parameter"
-// var z = "variable"
+var z = "variable"
 
 //What is a?
 // var a = "argument"
 // var a = "function"
-// var a = "parameter"
+var a = "parameter"
 // var a = "variable"
 
 //What is c?
 // var c = "argument"
 // var c = "function"
-// var c = "parameter"
+var c = "parameter"
 // var c = "variable"
 
 //What is 3?
-// var three = "argument"
+var three = "argument"
 // var three = "parameter"
 // var three = "variable"
 
 //What is num, when it is passed into the function?
-// var seven = "argument"
+var seven = "argument"
 // var seven = "parameter"
 // var seven = "variable"
 
@@ -73,25 +78,25 @@ function loopDeLoop(array){
 
 //What will be returned from loopDeLoop([1, 2, 3, 4])?
 // var answer1 = "Leaving early...at index 4"
-// var answer1 = "Finished the loop."
+var answer1 = "Finished the loop."
 // var answer1 = "Will I ever get used?"
 
 //What will be returned from loopDeLoop([1, "X", 3, 4])?
 // var answer2 = "Leaving early...at index 4"
-// var answer2 = "Leaving early...at index 1"
+var answer2 = "Leaving early...at index 1"
 // var answer2 = "Finished the loop."
 // var answer2 = "Will I ever get used?"
 
 //What will be returned from loopDeLoop(["X", 2, "X", 4])?
 // var answer3 = "Leaving early...at index 2"
-// var answer3 = "Leaving early...at index 0"
+var answer3 = "Leaving early...at index 0"
 // var answer3 = "Finished the loop."
 // var answer3 = "Will I ever get used?"
 
 //Will the else ever catch?
 // var answer4 = "Yes, if we finish the loop."
 // var answer4 = "Yes, if we don't finish the loop."
-// var answer4 = "No, by that line of code i is array.length."
+var answer4 = "No, by that line of code i is array.length."
 // var answer4 = "No, by that line of code i is 1 less than array.length."
 
 ///////////////////Problem 4//////////////////
@@ -110,7 +115,9 @@ var funcC = () => 3
 //Which of the following functions will be hoisted?
 //Remove the function names that are NOT hoisted.
 
-var answer5 = ["funcA", "funcB", "funcC"]
+var answer5 = ["funcA"]
+
+// Only function declarations are hoisted
 
 
 ///////////////////Problem 5//////////////////
@@ -126,3 +133,16 @@ var answer5 = ["funcA", "funcB", "funcC"]
 
 //Code here
 
+function janus (boo) {
+  function left () {
+    return "Looking backwards"
+  }
+  function right () {
+    return "Looking forwards"
+  }
+  if (boo === true){
+    return right
+  } else {
+    return left
+  }
+}
