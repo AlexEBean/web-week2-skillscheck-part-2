@@ -27,7 +27,7 @@ var sunriseColors = ["yellow", "orange", "red", "pink", "purple", "blue"]
 //Code here
 function sunrise () {
     let sunriseGreen = {...sunriseColors}
-    sunriseGreen[0] = "green"
+    sunriseGreen[0] = "green" 
     return sunriseGreen
 }
 

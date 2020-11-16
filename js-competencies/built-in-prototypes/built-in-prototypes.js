@@ -93,8 +93,6 @@ function cipherize (arr, str) {
 
   //Code here
 function reverseMe (str) {
-  let split = str.split("")
-  let reverseArr = split.reverse()
-  let reverseStr = reverseArr.join("")
+  let reverseStr = str.split("").reverse().join("")
   return reverseStr
 }

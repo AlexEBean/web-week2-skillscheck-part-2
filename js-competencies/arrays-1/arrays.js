@@ -70,6 +70,6 @@ function changeElement (arr, index, value) {
 
 //Code here
 function trim (arr) {
-    arr.pop()
+    arr.pop() 
     return arr
 }
